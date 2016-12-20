@@ -4,7 +4,7 @@ $username = strtolower(isset($_POST["user_name"]) ? $_POST["user_name"] : "");
 $command = strtolower(isset($_POST["command"]) ? $_POST["command"] : "");
 $text = strtolower(isset($_POST["text"]) ? $_POST["text"] : "3");
 
-$slots = max(2, min(7, (int)$text));
+$slots = 3;
 
 $emoticons = array(
     ':ryanjones:',
@@ -14,11 +14,15 @@ $emoticons = array(
 );
 
 $almostMessages = array(
-    'You can\'t _handle_ full Ryan Jones. It wasn\'t meant to be.'
+    'You can\'t handle full Ryan Jones. It wasn\'t meant to be.',
+    'Better luck next time!',
+    'Well. At least one Ryan Jones is better than none at all!'
 );
 
 $noJonesMessages = array(
-    'Not everyone can find Ryan Jones.'
+    'Not everyone can find Ryan Jones.',
+    'Better luck next time!',
+    'Not a single Ryan Jones? You must not be a lady.'
 );
 
 if($username === 'Ryan Jones') {
