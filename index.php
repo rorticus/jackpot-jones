@@ -156,13 +156,17 @@ $attachment = '';
 if($ladies == $slots) {
     $attachment = 'Ryan Jones always gets the ladies.';
 } else {
-    if($winner) {
-        $attachment = 'Ryan Jooooooooones!';
+    if(join("", $results) === ':ryanjones::woman::woman:') {
+        $attachment = 'The ladies always follow Ryan Jones.';
     } else {
-        if($ryanJoneses > 0) {
-            $attachment = $almostMessages[rand() % count($almostMessages)];
+        if($winner) {
+            $attachment = 'Ryan Jooooooooones!';
         } else {
-            $attachment = $noJonesMessages[rand() % count($noJonesMessages)];
+            if($ryanJoneses > 0) {
+                $attachment = $almostMessages[rand() % count($almostMessages)];
+            } else {
+                $attachment = $noJonesMessages[rand() % count($noJonesMessages)];
+            }
         }
     }
 }
