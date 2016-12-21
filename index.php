@@ -137,10 +137,13 @@ if($username === 'ryan') {
 
 $results = array();
 $ryanJoneses = 0;
+$ladies = 0;
 for($i = 0; $i < $slots; $i++) {
     $emoticon = $emoticons[rand() % count($emoticons)];
     if($emoticon === ':ryanjones:') {
         $ryanJoneses++;
+    } else if($emoticon === ':woman:') {
+        $ladies++;
     }
 
     $results[] = $emoticon;
@@ -150,14 +153,17 @@ $winner = $ryanJoneses == $slots;
 
 $attachment = '';
 
-
-if($winner) {
-    $attachment = 'Ryan Jooooooooones!';
+if($ladies == $slots) {
+    $attachment = 'Ryan Jones always gets the ladies.';
 } else {
-    if($ryanJoneses > 0) {
-        $attachment = $almostMessages[rand() % count($almostMessages)];
+    if($winner) {
+        $attachment = 'Ryan Jooooooooones!';
     } else {
-        $attachment = $noJonesMessages[rand() % count($noJonesMessages)];
+        if($ryanJoneses > 0) {
+            $attachment = $almostMessages[rand() % count($almostMessages)];
+        } else {
+            $attachment = $noJonesMessages[rand() % count($noJonesMessages)];
+        }
     }
 }
 
