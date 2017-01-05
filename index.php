@@ -93,7 +93,7 @@ foreach(array(
     "When in Rome, they do as Ryan Jones does",
     "Ryan Jones' pillow is cool on BOTH sides",
     "The Nobel Academy was awarded a prize from HIM",
-    "While swimming off the coast of Australia, Ryan Jones once scratched the underbelly of the Great White with his right han",
+    "While swimming off the coast of Australia, Ryan Jones once scratched the underbelly of the Great White with his right hand",
     "Ryan Jones taught Chuck Norris martial arts",
     "Time waits on no one, but him",
     "Once Ryan Jones ran a marathon because it was “on the way”",
@@ -125,7 +125,8 @@ foreach(array(
     "Ryan Jones once tried to acquire a cold just to see what it felt like, but it didn’t take",
     "Ryan Jones has inside jokes with people Ryan Jones’s never met",
     "Bikers walk their motorcycles past his home",
-    "Ryan Jones has inside jokes with complete strangers"
+    "Ryan Jones has inside jokes with complete strangers",
+    "Ryan Jones pees standing up and sitting down, at the same time"
 ) as $message) {
     $almostMessages[] = $message;
     $noJonesMessages[] = $message;
