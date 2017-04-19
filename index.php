@@ -137,6 +137,9 @@ foreach(array(
 if($username === 'ryan') {
     $emoticons = array(':woman:');
 }
+else if($username === "aaron.hanford") {
+    $emoticons = array(':skull_and_crossbones:');
+}
 
 $results = array();
 $ryanJoneses = 0;
@@ -165,11 +168,16 @@ if($ladies == $slots) {
         if($winner) {
             $attachment = 'Ryan Jooooooooones!';
         } else {
-            if($ryanJoneses > 0) {
-                $attachment = $almostMessages[rand() % count($almostMessages)];
-            } else {
-                $attachment = $noJonesMessages[rand() % count($noJonesMessages)];
-            }
+		if($username === "aaron.hanford") {
+			$attachment = "Not again Aaron. Not. Again.";
+		}
+		else {
+                if($ryanJoneses > 0) {
+                    $attachment = $almostMessages[rand() % count($almostMessages)];
+                } else {
+                    $attachment = $noJonesMessages[rand() % count($noJonesMessages)];
+                }
+		    }
         }
     }
 }
