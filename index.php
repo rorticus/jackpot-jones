@@ -128,7 +128,8 @@ foreach(array(
     "Ryan Jones has inside jokes with complete strangers",
 	"Ryan Jones pees standing up and sitting down, at the same time",
 	"Ryan Jones can cook minute rice in 30 seconds",
-    "Roses are red, violets are blue, Ryan Jones just dumped you"
+    "Roses are red, violets are blue, Ryan Jones just dumped you",
+    "Insuance companies pay Ryan Jones a premium to insure him"
 ) as $message) {
     $almostMessages[] = $message;
     $noJonesMessages[] = $message;
