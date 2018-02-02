@@ -35,7 +35,7 @@ foreach(array(
     "Whatever side of the tracks Ryan Jones’s currently on is the right side, even if Ryan Jones crosses the tracks Ryan Jones’ll still be on the right side",
     "Ryan Jones can speak Russian… in French",
     "Ryan Jones never says something tastes like chicken.. not even chicken",
-    "Superman has pijamas with his logo",
+    "Superman has pajamas with his logo",
     "Ryan Jones' tears can cure cancer, too bad Ryan Jones never cries",
     "The circus ran away to join Ryan Jones",
     "Bear hugs are what Ryan Jones gives bears",
