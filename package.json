@@ -1,0 +1,26 @@
+{
+  "name": "jackpot-jones",
+  "version": "1.0.0",
+  "description": "A slack integration for playing Jackpot Jones, a simple slot machine game.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorticus/jackpot-jones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rorticus/jackpot-jones/issues"
+  },
+  "homepage": "https://github.com/rorticus/jackpot-jones#readme",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "express": "^4.17.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}

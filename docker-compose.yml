@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  server:
+    image: docker.rortic.us/jackpot-jones
+    build: .
+    ports:
+      - 8080
