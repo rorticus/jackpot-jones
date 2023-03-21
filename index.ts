@@ -16,6 +16,7 @@ app.post('/', (req, res) => {
 
     let emoji = [];
     let message = '';
+	let responseType = 'ephemeral';
 
     if (username === 'ryan') {
         emoji = [':woman:', ':woman:', ':woman:'];
@@ -27,6 +28,7 @@ app.post('/', (req, res) => {
 
     if (emoji.every((e) => e === ':ryanjones:')) {
         message = 'Ryan Jooooooooooones!';
+	responseType = 'in_channel';
     } else if (emoji.every(e => e === ':woman:')) {
         message = 'Ryan Jones always gets the ladies';
     } else {
@@ -34,7 +36,7 @@ app.post('/', (req, res) => {
     }
 
     res.json({
-        response_type: 'in_channel',
+        response_type: responseType,
         text: emoji.join(''),
         attachments: [
             {

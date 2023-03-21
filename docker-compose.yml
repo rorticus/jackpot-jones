@@ -3,6 +3,7 @@ version: '3'
 services:
   server:
     image: docker.rortic.us/jackpot-jones
+    platform: linux/amd64
     build: .
     ports:
       - 8080
